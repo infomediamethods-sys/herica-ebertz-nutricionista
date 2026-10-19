@@ -12,8 +12,8 @@
   if (cab) {
     var solido = function (y) { cab.toggleAttribute('data-solido', y > 40); };
     solido(window.scrollY);
-    window.addEventListener('scroll', function () { solido(window.scrollY); }, { passive: true });
-    if (window.__lenis) window.__lenis.on('scroll', function (e) { solido(e.scroll); });
+    window.aoRolar( function () { solido(window.scrollY); }, { passive: true });
+    window.aoRolar( function (e) { solido(e.scroll); });
   }
 
   /* §10.3 Herói ao carregar: rótulo → nome → subtítulo → botões → chips, 70 ms entre linhas; foto em fade 0,8 s.

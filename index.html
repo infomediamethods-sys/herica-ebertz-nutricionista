@@ -21,10 +21,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-herica-celular-480.webp 480w, assets/img/heroi-herica-celular-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="preload" as="image" href="assets/img/heroi-herica-celular.webp" media="(max-width: 899px)">
-<link rel="preload" as="image" href="assets/img/heroi-herica-desktop.webp" media="(min-width: 900px)">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -108,11 +107,10 @@
     </div>
     <div class="heroi__foto filme rv-foto">
       <picture>
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-herica-desktop.webp" type="image/webp" width="1080" height="720">
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-herica-desktop.jpg" type="image/jpeg" width="1080" height="720">
-        <source srcset="assets/img/heroi-herica-celular.webp" type="image/webp" width="864" height="1080">
-        <img src="assets/img/heroi-herica-celular.jpg" width="864" height="1080" alt="Hérica Ebertz, nutricionista, sentada num sofá claro, de camisa branca" fetchpriority="high">
-      </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-herica-celular-480.webp 480w, assets/img/heroi-herica-celular-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-herica-celular-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-herica-celular-960.jpg" width="864" height="1080" alt="Hérica Ebertz, nutricionista, sentada num sofá claro, de camisa branca" decoding="async" fetchpriority="high">
+</picture>
     </div>
     <ul class="chips rv-carga" role="list">
       <li>Emagrecimento</li>
@@ -132,10 +130,11 @@
     <ul class="cards-area" role="list" data-lenis-prevent>
       <li class="rv">
         <article class="card-foto">
-          <picture class="filme">
-            <source srcset="assets/img/area-melancia.webp" type="image/webp">
-            <img src="assets/img/area-melancia.jpg" width="960" height="1200" loading="lazy" alt="Fatias de melancia sobre linho">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-melancia-480.webp 480w, assets/img/area-melancia-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-melancia-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-melancia-960.jpg" width="960" height="1200" alt="Fatias de melancia sobre linho" decoding="async">
+</picture>
           <div class="card-foto__texto">
             <h3>Emagrecimento com calma</h3>
             <p>Sem data marcada no calendário.</p>
@@ -144,10 +143,11 @@
       </li>
       <li class="rv">
         <article class="card-foto">
-          <picture class="filme">
-            <source srcset="assets/img/area-prato-caseiro.webp" type="image/webp">
-            <img src="assets/img/area-prato-caseiro.jpg" width="960" height="1200" loading="lazy" alt="Prato de comida caseira">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-prato-caseiro-480.webp 480w, assets/img/area-prato-caseiro-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-prato-caseiro-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-prato-caseiro-960.jpg" width="960" height="1200" alt="Prato de comida caseira" decoding="async">
+</picture>
           <div class="card-foto__texto">
             <h3>Relação com a comida</h3>
             <p>Como você se sente antes e depois de comer.</p>
@@ -156,10 +156,11 @@
       </li>
       <li class="rv">
         <article class="card-foto">
-          <picture class="filme">
-            <source srcset="assets/img/area-feira.webp" type="image/webp">
-            <img src="assets/img/area-feira.jpg" width="960" height="1200" loading="lazy" alt="Frutas e verduras numa feira">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-feira-480.webp 480w, assets/img/area-feira-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-feira-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-feira-960.jpg" width="960" height="1200" alt="Frutas e verduras numa feira" decoding="async" loading="lazy">
+</picture>
           <div class="card-foto__texto">
             <h3>Feira e mercado</h3>
             <p>A comida que você já leva para casa.</p>
@@ -168,10 +169,11 @@
       </li>
       <li class="rv">
         <article class="card-foto">
-          <picture class="filme">
-            <source srcset="assets/img/area-cafe-da-manha.webp" type="image/webp">
-            <img src="assets/img/area-cafe-da-manha.jpg" width="960" height="1200" loading="lazy" alt="Mesa de café da manhã">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-cafe-da-manha-480.webp 480w, assets/img/area-cafe-da-manha-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-cafe-da-manha-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-cafe-da-manha-960.jpg" width="960" height="1200" alt="Mesa de café da manhã" decoding="async" loading="lazy">
+</picture>
           <div class="card-foto__texto">
             <h3>Café da manhã</h3>
             <p>A primeira refeição de quem sai correndo de casa.</p>
@@ -180,10 +182,11 @@
       </li>
       <li class="rv">
         <article class="card-foto">
-          <picture class="filme">
-            <source srcset="assets/img/area-graos.webp" type="image/webp">
-            <img src="assets/img/area-graos.jpg" width="960" height="1200" loading="lazy" alt="Grãos em potes de vidro">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-graos-480.webp 480w, assets/img/area-graos-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-graos-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-graos-960.jpg" width="960" height="1200" alt="Grãos em potes de vidro" decoding="async" loading="lazy">
+</picture>
           <div class="card-foto__texto">
             <h3>Base científica</h3>
             <p>Orientação apoiada em estudos, longe da dieta da moda.</p>
@@ -204,10 +207,11 @@
 
       <article class="split" id="sem-terrorismo">
         <div class="split__midia rv">
-          <picture class="filme">
-            <source srcset="assets/img/split-mesa-posta.webp" type="image/webp">
-            <img src="assets/img/split-mesa-posta.jpg" width="1200" height="1200" loading="lazy" alt="Mesa posta vista de cima, com pratos e linho">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/split-mesa-posta-480.webp 480w, assets/img/split-mesa-posta-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/split-mesa-posta-960.webp 960w" sizes="50vw">
+  <img src="assets/img/split-mesa-posta-960.jpg" width="1200" height="1200" alt="Mesa posta vista de cima, com pratos e linho" decoding="async" loading="lazy">
+</picture>
           <div class="venn" aria-hidden="true">
             <span class="venn__circulo"></span>
             <span class="venn__circulo"></span>
@@ -232,10 +236,11 @@
 
       <article class="split split--inverso" id="rotina">
         <div class="split__midia rv">
-          <picture class="filme">
-            <source srcset="assets/img/split-cozinha-rotina.webp" type="image/webp">
-            <img src="assets/img/split-cozinha-rotina.jpg" width="1200" height="1200" loading="lazy" alt="Mãos cortando coentro numa cozinha clara" style="object-position: 60% 50%">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/split-cozinha-rotina-480.webp 480w, assets/img/split-cozinha-rotina-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/split-cozinha-rotina-960.webp 960w" sizes="50vw">
+  <img src="assets/img/split-cozinha-rotina-960.jpg" width="1200" height="1200" alt="Mãos cortando coentro numa cozinha clara" style="object-position: 60% 50%" decoding="async" loading="lazy">
+</picture>
         </div>
         <div class="split__texto rv">
           <p class="rotulo">02 · A SEMANA</p>
@@ -251,10 +256,11 @@
 
       <article class="split" id="whatsapp">
         <div class="split__midia rv">
-          <picture class="filme">
-            <source srcset="assets/img/split-celular-cha.webp" type="image/webp">
-            <img src="assets/img/split-celular-cha.jpg" width="1200" height="1200" loading="lazy" alt="Mãos segurando um celular ao lado de uma xícara de chá">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/split-celular-cha-480.webp 480w, assets/img/split-celular-cha-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/split-celular-cha-960.webp 960w" sizes="50vw">
+  <img src="assets/img/split-celular-cha-960.jpg" width="1200" height="1200" alt="Mãos segurando um celular ao lado de uma xícara de chá" decoding="async" loading="lazy">
+</picture>
         </div>
         <div class="split__texto rv">
           <p class="rotulo">03 · NO WHATSAPP</p>
@@ -300,10 +306,11 @@
         </div>
       </div>
       <div class="funciona__midia">
-        <picture class="filme rv-foto">
-          <source srcset="assets/img/como-funciona-maos-mexerica.webp" type="image/webp">
-          <img src="assets/img/como-funciona-maos-mexerica.jpg" width="1200" height="1500" loading="lazy" alt="Mãos segurando uma mexerica">
-        </picture>
+        <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/como-funciona-maos-mexerica-480.webp 480w, assets/img/como-funciona-maos-mexerica-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/como-funciona-maos-mexerica-960.webp 960w" sizes="50vw">
+  <img src="assets/img/como-funciona-maos-mexerica-960.jpg" width="1200" height="1500" alt="Mãos segurando uma mexerica" decoding="async" loading="lazy">
+</picture>
         <div class="caminho" aria-hidden="true">
           <span class="caminho__arco caminho__arco--1"></span>
           <span class="caminho__arco caminho__arco--2"></span>
@@ -351,10 +358,11 @@
   <section class="secao sobre" id="sobre" aria-labelledby="sobre-titulo">
     <div class="container sobre__grade">
       <div class="sobre__foto rv">
-        <picture class="filme">
-          <source srcset="assets/img/sobre-herica.webp" type="image/webp">
-          <img src="assets/img/sobre-herica.jpg" width="720" height="900" loading="lazy" alt="Hérica Ebertz sorrindo, com a mão no cabelo">
-        </picture>
+        <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/sobre-herica-480.webp 480w, assets/img/sobre-herica-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/sobre-herica-960.webp 960w" sizes="50vw">
+  <img src="assets/img/sobre-herica-960.jpg" width="720" height="900" alt="Hérica Ebertz sorrindo, com a mão no cabelo" decoding="async" loading="lazy">
+</picture>
       </div>
       <div class="sobre__texto">
         <div class="cabeca rv">

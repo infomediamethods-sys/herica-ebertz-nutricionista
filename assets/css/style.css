@@ -157,7 +157,7 @@ html.lenis [id] { scroll-margin-top: 0; }
 .cabecalho {
   position: sticky; top: 0; z-index: 50;
   background: rgba(250, 250, 248, 0);
-  transition: background-color .3s var(--curva), box-shadow .3s var(--curva);
+  transition: background-color .3s var(--curva);
 }
 .cabecalho[data-solido] {
   background: rgba(250, 250, 248, .82);
@@ -306,7 +306,7 @@ html.lenis [id] { scroll-margin-top: 0; }
   border-radius: var(--raio-card);
   overflow: hidden;
   box-shadow: var(--sombra-card-celular);
-  transition: transform .4s var(--curva), box-shadow .4s var(--curva);
+  transition: transform .4s var(--curva);
 }
 .card-foto .filme { position: absolute; inset: 0; }
 .card-foto img { object-position: 50% 35%; transition: transform .4s var(--curva); }
@@ -718,4 +718,10 @@ html.lenis [id] { scroll-margin-top: 0; }
 }
 @media (max-width: 899px) {
   .cards-area[role="list"] { padding-bottom: var(--space-8); margin-bottom: calc(-1 * var(--space-6)); }
+}
+
+
+/* Regra do Armin, 19/10/2026 (§0 "Rolagem leve no celular"): sem vidro desfocado no celular; fundo quase opaco. Aplicado por aplicar-carregamento.mjs. */
+@media (max-width: 899px) {
+  .cabecalho[data-solido] { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(250, 250, 248, 0.96); }
 }
